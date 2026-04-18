@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #E8F4FD 0%, #D6ECFA 100%);
+  min-height: 100vh;
+  padding: 16px;
+  direction: rtl;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1A2A3A;
+  text-shadow: 0 4px 10px rgba(79, 195, 247, 0.2);
+}
+
+.tagline {
+  color: #2C3E50;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Command Bar */
+.command-bar-container {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 30px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.command-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  padding: 8px 0;
+  color: #1A2A3A;
+  outline: none;
+  font-family: 'Cairo', monospace;
+}
+
+.command-input::placeholder {
+  color: #90A4AE;
+}
+
+.suggestions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1A2A3A;
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip:hover {
+  background: white;
+  border-color: #4FC3F7;
+}
+
+/* Dashboard */
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.pane {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.pane h3 {
+  color: #1A2A3A;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #4FC3F7;
+  padding-bottom: 8px;
+}
+
+.wallet-balance {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1A2A3A;
+}
+
+.wallet-subtitle {
+  color: #546E7A;
+  font-size: 0.9rem;
+}
+
+.item-list {
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #2C3E50;
+}
+
+.task-item span {
+  cursor: pointer;
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #EF5350;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
+
+.empty-state {
+  color: #90A4AE;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Hubs */
+.hubs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.hub-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.hub-icon {
+  font-size: 2rem;
+}
+
+.hub-card h4 {
+  color: #1A2A3A;
+  margin-bottom: 4px;
+}
+
+.hub-card p {
+  color: #546E7A;
+  font-size: 0.85rem;
+}
+
+/* Output Log */
+.output-log {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 16px;
+  color: #4FC3F7;
+  font-family: monospace;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #4FC3F7;
+  font-size: 0.9rem;
+}
+
+.log-line {
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(79, 195, 247, 0.1);
+}
+
+.log-pane .log-entry {
+  color: #2C3E50;
+  font-family: monospace;
+  font-size: 0.85rem;
+  padding: 4px 0;
+}
