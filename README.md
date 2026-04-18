@@ -1,5 +1,6 @@
- 
-# ⚡ ZeroO
+<div align="center">
+
+# ⚡ ZeroOne OS ⚡
 
 ### الجيل الثاني من أنظمة التشغيل العربية
 
@@ -72,13 +73,6 @@
 ---
 
 ## 📂 هيكل المشروع
-zeroone-os/
-├── public/
-│ └── index.html
-├── src/
-│ ├── App.tsx # المكون الرئيسي ومنطق الأوامر
-│ ├── App.css # التنسيقات الكاملة
-│ └── index.tsx # نقطة البداية
 ├── package.json # الحزم والإعدادات
 ├── tsconfig.json # إعدادات TypeScript
 └── README.md # هذا الملف
